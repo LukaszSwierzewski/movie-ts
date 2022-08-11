@@ -4,8 +4,7 @@ import { MovieTemplate } from './templates/singleMovie.js'
 const DOM = {
     genres: document.querySelector('.genres'),
     fetchMovie: document.querySelector('#renderMovie'),
-    movies: document.querySelector('.movies'),
-    genreIDs: document.querySelector('#genreID')
+    movies: document.querySelector('.movies')
 }
 const ids: string[] = []
 
@@ -31,10 +30,10 @@ async function renderGenres() {
     })
 }
 
-async function renderMovies (idsArray: (string | null)[]) {
+async function renderMovies (idsArray: string[]) {
     const joinIds = idsArray.join(',')
     if (ids.length === 0) {
-        if (DOM.movies) DOM.movies.innerHTML = 'FIRST select one or more genres'
+        if (DOM.movies) DOM.movies.innerHTML = 'FIRST select one or more genres' 
         return
     }
     if (DOM.movies) DOM.movies.innerHTML = ''

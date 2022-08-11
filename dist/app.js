@@ -14,8 +14,7 @@ import { MovieTemplate } from './templates/singleMovie.js';
 const DOM = {
     genres: document.querySelector('.genres'),
     fetchMovie: document.querySelector('#renderMovie'),
-    movies: document.querySelector('.movies'),
-    genreIDs: document.querySelector('#genreID')
+    movies: document.querySelector('.movies')
 };
 const ids = [];
 const addClickEvent = (selector, attribute, cb) => {
