@@ -1,0 +1,34 @@
+.container {
+    max-width: 60rem;
+    margin: auto;
+
+}
+
+.genre-btn {
+    background: #fff;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.genre-btn:hover {
+    background: #000;
+    color: #fff;
+}
+
+.active {
+    background: #000;
+    color: #fff;
+}
+
+.action {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.primaty-btn {
+    background: #000;
+    color: #fff;
+    padding: 1rem;
+
+}
