@@ -7,7 +7,7 @@ const DOM = {
     movies: document.querySelector('.movies'),
     genreIDs: document.querySelector('#genreID')
 }
-const ids: any[] = []
+const ids: string[] = []
 
 const addClickEvent = (selector: string, attribute: string, cb: Function) => {
     const btns = document.querySelectorAll(`${selector}`)
