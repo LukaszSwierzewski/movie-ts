@@ -1,3 +1,5 @@
+// I know I should put this API key on .env file but then I can't send you live preview
+// I setup the API call limit to make it save from calling it to many times.
 const API_KEY = '90f293a092c89d7d60e8dc93f000605c'
 
 const genresUrl = `https://api.themoviedb.org/3/genre/movie/list?api_key=${API_KEY}&language=en-US`
